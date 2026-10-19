@@ -3,7 +3,6 @@
 }
 
 /* Hide Streamlit hosting controls and leave only the application interface. */
-[data-testid="stToolbar"],
 [data-testid="stDecoration"],
 [data-testid="stStatusWidget"],
 [data-testid="stAppDeployButton"],
@@ -98,3 +97,68 @@ footer {
 	.resolution-banner strong {
 	    font-size: 1.15rem;
 	}
+
+@media (max-width: 768px) {
+	[data-testid="stMainBlockContainer"] {
+		padding: 1.25rem 1rem 2rem;
+	}
+
+	[data-testid="stSidebar"] [data-testid="stSidebarContent"] {
+		padding: 1rem;
+	}
+
+	[data-testid="stSidebar"] img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.welcome {
+		padding: 1.25rem 1rem;
+	}
+
+	.welcome h1 {
+		font-size: 1.75rem;
+	}
+
+	.welcome p {
+		font-size: 1rem;
+	}
+
+	.resolution-banner {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.35rem;
+		padding: 0.75rem;
+		overflow-wrap: anywhere;
+	}
+
+	.resolution-banner strong {
+		font-size: 1.05rem;
+	}
+
+	[data-testid="stDataFrame"] {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	[data-testid="stMainBlockContainer"] {
+		padding: 1rem 0.75rem 1.5rem;
+	}
+
+	[data-testid="stSidebar"] h1 {
+		font-size: 1.35rem;
+	}
+
+	[data-testid="stSidebar"] .stSelectbox {
+		margin-bottom: 0.75rem;
+	}
+
+	.mpal-signature {
+		margin-top: 1rem;
+	}
+
+	.resolution-banner {
+		margin-top: 0.25rem;
+	}
+}
